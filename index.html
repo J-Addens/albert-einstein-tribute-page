@@ -1,18 +1,64 @@
 <html>
   <head>
     <style>
-      .center {
+      img {
+        max-width: 330px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        height: auto;
+        padding: 10px;
+      }
+      #img-div {
+        text-align: center;
+        display: block;
+        filter: grayscale(100%);
+        width: 100%
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
       }
       .text1 {
         text-align: center;
+        padding: 20px;
       }
       .text {
         text-align: center;
         border: 3px solid gray;
+
+      }
+      body {
+        background-color: #050505;
+      }
+      h1, h3, p, a {
+        font-family: sans-serif;
+        color: white;
+        text-align: center;
+        padding: 10px;
       }
     </style>
 
@@ -22,14 +68,27 @@
     <div id="main">
 
       <h1 id="title" class="text1">Albert Einstein</h1>
-        <p class="text1">One of the best thinkers that lived.</p>
-        <div id="img-div">
+        <p class="text1"><em>"Imagination is more important than knowledge.<br> Knowledge is limited. Imagination encircles the world."</em><br><b>- Albert Einstein</b></p>
 
-        <img id="image" src="images/albert-einstein.jpg" alt="Albert Einstein Portrait." class="center">
-        <p id="img-caption" class="text1">The man, the myth, the legend!</p>
+
+      <div id="img-div">
+        <div class="row">
+          <div class="column"></div>
+          <div class="column">
+            <img id="image" src="images/albert-einstein.jpg" alt="Albert Einstein Portrait." class="center">
+            <img id="image" src="images/albert-einstein3.jpg" alt="Albert Einstein Portrait." class="center">
+          </div>
+          <div class="column">
+            <img id="image" src="images/albert-einstein2.jpg" alt="Albert Einstein Portrait." class="center">
+            <img id="image" src="images/einsteintime.jpg" alt="Albert Einstein Portrait." class="center">
+          </div>
+          <div class="column"></div>
+        </div>
+          <p id="img-caption" class="text1">The man, the myth, the legend!</p>
       </div>
 
       <div id="tribute-info" class="text">
+        <h3>Factsheet</h3>
         <p>Albert Einstein, (born March 14, 1879, Ulm, Württemberg, Germany - died April 18, 1955, Princeton, New Jersey, U.S.).</p>
         <p>German-born physicist who developed the special and general theories of relativity and won the Nobel Prize for Physics in 1921 for his explanation of the photoelectric effect.</p>
         <p>Einstein is generally considered the most influential physicist of the 20th century.</p>
@@ -40,4 +99,7 @@
       </div>
     </div>
   </body>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+</script>
 </html>
