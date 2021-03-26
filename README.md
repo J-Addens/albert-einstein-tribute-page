@@ -1,8 +1,7 @@
-This is a small Albert Einstein tribute page.
+# This is a small tribute page about Albert Einstein.
 
-It makes up the first part of my coding portfolio.
+## [Tribute Page](https://j-addens.github.io/albert-einstein-tribute-page/)
 
-You can see this project at the following URL:
-https://j-addens.github.io/albert-einstein-tribute-page/
+It makes up the first assignment from the responsive webdesign certificate @freecodecamp.
 
 Enjoy!
